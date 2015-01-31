@@ -22,7 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="neoscrypt" />
+        <module name="neoscryptj" />
       </profile>
     </annotationProcessing>
   </component>

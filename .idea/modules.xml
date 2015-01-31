@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/neoscrypt.iml" filepath="$PROJECT_DIR$/neoscrypt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neoscryptj.iml" filepath="$PROJECT_DIR$/neoscryptj.iml" />
     </modules>
   </component>
 </project>

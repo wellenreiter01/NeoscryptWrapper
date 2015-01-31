@@ -7,11 +7,11 @@ package com.crypto.algo;
  */
 
 
-import com.crypto.algo.neoscrypt.hasher;
-
-import org.junit.Assert;
-
+import com.crypto.algo.neoscryptj.hasher;
+//import junit.framework.Assert;
+//import junit.framework.TestCase;
 import org.junit.Test;
+import org.junit.Assert;
 
 
 public class hasher_Test {
@@ -32,21 +32,23 @@ public class hasher_Test {
             41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
             51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
             61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
-            71, 72, 73, 74, 75, 76, 77, 78, 79, 70
+            71, 72, 73, 74, 75, 76, 77, 78, 79, 80
     };
 
-    private char[] reborn = new char[32];
+    private static char[] reborn = new char[32];
 
 
 
-    @Test
-   public  void neoscryptTest() throws Exception {
+
+@Test
+    public void neoscryptTest() throws Exception {
 
        // for (i=0; i<80;input[i] = {i})
         Assert.assertEquals("LengthTest1", reference.length, reborn.length);
        reborn = hasher.getHash(input, 0x80000620);
        Assert.assertEquals("LengthTest2", reference.length, reborn.length);
        Assert.assertEquals("NeoscryptResult:", reference.hashCode(), input.hashCode());
+
 
    }
 
