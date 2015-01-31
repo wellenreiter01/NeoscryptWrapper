@@ -3,19 +3,19 @@
 #include "neoscrypt.c"
 #include <stdint.h>
 
-jcharArray JNICALL Java_com_crypto_algo_neoscrypt_hasher_neoscrypt
-    (JNIEnv *env, jobject object, jcharArray inputArray, jcharArray outputArray, jint profile)
+jbyteArray JNICALL Java_com_crypto_algo_neoscrypt_hasher_neoscrypt
+    (JNIEnv *env, jobject object, jbyteArray inputArray, jbyteArray outputArray, jint profile)
 {
-  jcharArray hash = NULL;
-  jchar *input = (*env)->GetIntArrayElements(env,inputArray,NULL);
-  jchar *output = (*env)->GetIntArrayElements(env,outputArray,NULL);
+  jbyteArray hash = NULL;
+  jbyte *input = (*env)->GetIntArrayElements(env,inputArray,NULL);
+  jbyte *output = (*env)->GetIntArrayElements(env,outputArray,NULL);
   neoscrypt((const uint8_t*)input,(uint8_t*)output,profile);
 
-  hash = (*env)->NewCharArray(env,32);
+  hash = (*env)->NewByteArray(env,32);
 
   if (hash)
   	{
-  		(*env)->SetCharArrayRegion(env,hash, 0, 32, output);
+  		(*env)->SetByteArrayRegion(env,hash, 0, 32, output);
   	}
       return hash;
 }

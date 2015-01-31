@@ -12,8 +12,8 @@ extern "C" {
  * Method:    neoscrypt
  * Signature: ([C[CI)[C
  */
-JNIEXPORT jcharArray JNICALL Java_com_crypto_algo_neoscrypt_hasher_neoscrypt
-  (JNIEnv *, jobject, jcharArray, jcharArray, jint);
+JNIEXPORT jbyteArray JNICALL Java_com_crypto_algo_neoscrypt_hasher_neoscrypt
+  (JNIEnv *, jobject, jbyteArray, jbyteArray, jint);
 
 #ifdef __cplusplus
 }
