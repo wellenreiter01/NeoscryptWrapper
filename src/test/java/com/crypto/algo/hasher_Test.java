@@ -1,4 +1,4 @@
-package com.crypto.algo;
+
 /**
  * Test Class to test funtions of the neoscrypt hasher
  * current tests:
@@ -7,11 +7,15 @@ package com.crypto.algo;
  */
 
 
-import com.crypto.algo.neoscryptj.hasher;
 //import junit.framework.Assert;
 //import junit.framework.TestCase;
-import org.junit.Test;
+
+package com.crypto.algo;
+
+import com.crypto.algo.neoscryptj.hasher;
+
 import org.junit.Assert;
+import org.junit.Test;
 
 
 public class hasher_Test {
