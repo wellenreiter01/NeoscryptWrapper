@@ -25,6 +25,9 @@
         <module name="neoscryptj" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="neoscryptj" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

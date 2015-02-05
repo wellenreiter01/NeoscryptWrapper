@@ -11,7 +11,7 @@ public class hasher {
      * loads the native library passes program parameter to the c-code
      * and returns the result
      */
-    private static boolean native_library_loaded = false;
+    private static  boolean native_library_loaded = false;
   //  private static Logger log = LoggerFactory.getLogger(hasher.class);
     
         static {
